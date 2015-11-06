@@ -24,7 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             clientKey: "B1mw60DK16b682ZKKuAMVXcQcoYXko5ffmaJ0qGt")
         
         // [Optional] Track statistics around application opens.
-        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)ls
+        
         
         return true
     }
