@@ -35,6 +35,14 @@ class DonationsViewController: UIViewController, UICollectionViewDataSource, UIC
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        let nav = self.navigationController?.navigationBar
+        
+        nav?.barTintColor = UIColor.rosa
+        nav?.tintColor = UIColor.whiteColor()
+        nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.laranja]
+    }
 
     func updateTableView() {
         collectionView.reloadData()
@@ -78,8 +86,11 @@ class DonationsViewController: UIViewController, UICollectionViewDataSource, UIC
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "segueApplyForDonation" {
-            let pVC = segue.destinationViewController as! ApplyViewController
+            let pVC = segue.destinationViewController as! DonationDetailsViewController
             pVC.donation = sender as? Donation
         }
+    }
+    
+    @IBAction func unwindSegueFromApplyToDonations(segue: UIStoryboardSegue){
     }
 }

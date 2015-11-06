@@ -16,16 +16,25 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let userLogged = User()
-        userLogged.signIn("rvaler", password: "rvaler") { (success, error) -> () in
-            print(success)
-        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        let nav = self.navigationController?.navigationBar
+
+        nav?.barTintColor = UIColor.whiteColor()
+        nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
+        UIApplication.sharedApplication().statusBarStyle = .Default
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+    }
+
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }

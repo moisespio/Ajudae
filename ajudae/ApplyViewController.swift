@@ -14,8 +14,7 @@ class ApplyViewController: UIViewController {
     @IBOutlet weak var labelCity: UILabel!
     @IBOutlet weak var textViewMessage: UITextView!
     @IBOutlet weak var buttonSend: UIButton!
-    @IBOutlet weak var labelItemTitle: UILabel!
-    @IBOutlet weak var labelItemDescription: UILabel!
+
 
     var donation: Donation?
     
@@ -52,9 +51,7 @@ class ApplyViewController: UIViewController {
             return
         }
         
-//        self.labelUserName.text = user.name
-        self.labelItemTitle.text = _donation.title
-        self.labelItemDescription.text = _donation.about
+        self.navigationItem.title = _donation.title
     }
 
     @IBAction func applyForDonation(sender: AnyObject) {
@@ -72,7 +69,7 @@ class ApplyViewController: UIViewController {
         
         newApplyDonation.saveInBackgroundWithBlock { (succeeded, error) -> Void in
             if succeeded {
-                self.dismissViewControllerAnimated(true, completion: nil)
+                self.performSegueWithIdentifier("unwindSegueFromApplyToDonations", sender: self)
             }
         }
     }
