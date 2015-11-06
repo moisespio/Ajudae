@@ -84,6 +84,7 @@
                                                 <constraint firstItem="got-nG-olf" firstAttribute="leading" secondItem="njL-Ay-sPw" secondAttribute="leadingMargin" constant="140" id="3Rg-3m-nGL"/>
                                                 <constraint firstAttribute="bottom" secondItem="vhN-g1-2Cj" secondAttribute="bottom" id="C0e-HY-a4H"/>
                                                 <constraint firstItem="vhN-g1-2Cj" firstAttribute="centerY" secondItem="njL-Ay-sPw" secondAttribute="centerY" id="Dqq-eL-5YJ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="I2Q-X2-3un" secondAttribute="trailing" constant="64" id="GQH-im-Ru9"/>
                                                 <constraint firstItem="got-nG-olf" firstAttribute="centerY" secondItem="njL-Ay-sPw" secondAttribute="centerY" constant="-12" id="NJE-Wv-lmf"/>
                                                 <constraint firstItem="got-nG-olf" firstAttribute="leading" secondItem="vhN-g1-2Cj" secondAttribute="trailing" constant="10" id="Sq5-kL-3Bn"/>
                                                 <constraint firstItem="got-nG-olf" firstAttribute="top" secondItem="vhN-g1-2Cj" secondAttribute="top" id="TLX-a0-flY"/>
