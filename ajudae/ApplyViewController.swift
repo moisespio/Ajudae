@@ -17,6 +17,8 @@ class ApplyViewController: UIViewController {
     @IBOutlet weak var labelItemTitle: UILabel!
     @IBOutlet weak var labelItemDescription: UILabel!
 
+    var donation: Donation?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,10 +28,22 @@ class ApplyViewController: UIViewController {
         self.textViewMessage.clipsToBounds = true
         self.imageProfile.layer.cornerRadius = self.imageProfile.frame.width/2
         self.imageProfile.clipsToBounds = true
+        
+        self.loadInfo()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func loadInfo(){
+        guard let _donation = self.donation else {
+            return
+        }
+        
+//        self.labelUserName.text = user.name
+        self.labelItemTitle.text = _donation.title
+        self.labelItemDescription.text = _donation.about
     }
 
 }

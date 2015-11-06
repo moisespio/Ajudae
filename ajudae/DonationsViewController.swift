@@ -55,6 +55,10 @@ class DonationsViewController: UIViewController, UICollectionViewDataSource, UIC
         return 16
     }
     
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("segueApplyForDonation", sender: self.donations[indexPath.row])
+    }
+    
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! DonationsCollectionViewCell
 
@@ -63,5 +67,12 @@ class DonationsViewController: UIViewController, UICollectionViewDataSource, UIC
         cell.labelTitle.text = donation.title
 
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "segueApplyForDonation" {
+            let pVC = segue.destinationViewController as! ApplyViewController
+            pVC.donation = sender as? Donation
+        }
     }
 }

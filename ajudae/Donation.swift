@@ -28,6 +28,7 @@ class Donation: PFObject, PFSubclassing {
     @NSManaged var image: PFFile?
     @NSManaged var countApply: NSNumber?
     @NSManaged var category: Category?
+    @NSManaged var about: String?
     
     
     func getDonations(byCategory: String?, callback: (donations: [Donation], error: NSError?) -> ()) {
