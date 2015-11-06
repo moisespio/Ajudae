@@ -52,7 +52,7 @@ class ApplyViewController: UIViewController {
             return
         }
         
-//        self.labelUserName.text = user.name
+        self.navigationItem.title = _donation.title
         self.labelItemTitle.text = _donation.title
         self.labelItemDescription.text = _donation.about
     }
@@ -72,7 +72,7 @@ class ApplyViewController: UIViewController {
         
         newApplyDonation.saveInBackgroundWithBlock { (succeeded, error) -> Void in
             if succeeded {
-                self.dismissViewControllerAnimated(true, completion: nil)
+                self.performSegueWithIdentifier("unwindSegueFromApplyToDonations", sender: self)
             }
         }
     }
