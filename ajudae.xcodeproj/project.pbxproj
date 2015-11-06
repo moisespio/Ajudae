@@ -17,6 +17,7 @@
 		54843B7A1BEC510C00059A65 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54843B731BEC510C00059A65 /* User.swift */; };
 		54843B871BEC589900059A65 /* Creation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54843B861BEC589900059A65 /* Creation.storyboard */; };
 		54843B8E1BEC5B1B00059A65 /* StoryCreationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54843B8D1BEC5B1B00059A65 /* StoryCreationTableViewController.swift */; };
+		54FE19B31BEC8CEC0049BCFA /* DonationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE19B21BEC8CEC0049BCFA /* DonationDetailsViewController.swift */; };
 		800409721BEC440700A6D67C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800409711BEC440700A6D67C /* FeedViewController.swift */; };
 		8004097E1BEC4B4200A6D67C /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 800409741BEC4B4200A6D67C /* OpenSans-Bold.ttf */; };
 		8004097F1BEC4B4200A6D67C /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 800409751BEC4B4200A6D67C /* OpenSans-BoldItalic.ttf */; };
@@ -78,6 +79,7 @@
 		54843B731BEC510C00059A65 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		54843B861BEC589900059A65 /* Creation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Creation.storyboard; sourceTree = "<group>"; };
 		54843B8D1BEC5B1B00059A65 /* StoryCreationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryCreationTableViewController.swift; sourceTree = "<group>"; };
+		54FE19B21BEC8CEC0049BCFA /* DonationDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationDetailsViewController.swift; sourceTree = "<group>"; };
 		800409711BEC440700A6D67C /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = Controller/FeedViewController.swift; sourceTree = "<group>"; };
 		800409741BEC4B4200A6D67C /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		800409751BEC4B4200A6D67C /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				80FFE65D1BEC622E006093FF /* StoriesTableViewCell.swift */,
 				80FFE65F1BEC7394006093FF /* ApplyViewController.swift */,
 				80FFE6611BEC7C1F006093FF /* StoryViewController.swift */,
+				54FE19B21BEC8CEC0049BCFA /* DonationDetailsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				80FFE6581BEC5B96006093FF /* DonationsViewController.swift in Sources */,
 				80C4CF821BEC394B00044D0E /* MainViewController.swift in Sources */,
 				80FFE6621BEC7C1F006093FF /* StoryViewController.swift in Sources */,
+				54FE19B31BEC8CEC0049BCFA /* DonationDetailsViewController.swift in Sources */,
 				800409721BEC440700A6D67C /* FeedViewController.swift in Sources */,
 				54843B8E1BEC5B1B00059A65 /* StoryCreationTableViewController.swift in Sources */,
 				BF37BF671BEC615D00FB1BD5 /* Util.swift in Sources */,
