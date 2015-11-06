@@ -35,6 +35,14 @@ class DonationsViewController: UIViewController, UICollectionViewDataSource, UIC
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        let nav = self.navigationController?.navigationBar
+        
+        nav?.barTintColor = UIColor.rosa
+        nav?.tintColor = UIColor.whiteColor()
+        nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.laranja]
+    }
 
     func updateTableView() {
         collectionView.reloadData()

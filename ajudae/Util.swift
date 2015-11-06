@@ -77,8 +77,8 @@ class Util {
             UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName : font, NSForegroundColorAttributeName : Util.hexStringToUIColor("FFFFFF")]
         }
 
-        UINavigationBar.appearance().tintColor = Util.hexStringToUIColor("FFFFFF")
-        UINavigationBar.appearance().barTintColor = colorNav
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().barTintColor = UIColor.whiteColor()
         UINavigationBar.appearance().opaque = false
         UINavigationBar.appearance().translucent = false
         UINavigationBar.appearance().shadowImage = UIImage()
@@ -93,6 +93,8 @@ class Util {
         UITabBar.appearance().opaque = false
 
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.redColor()], forState: UIControlState.Selected)
+        
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
     }
 
     static func howLongTime (date: NSDate) -> String {
