@@ -226,15 +226,15 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gb9-yf-l6g">
                                                     <rect key="frame" x="12" y="6" width="576" height="157"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="História do Tiago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfn-VE-EJs">
-                                                            <rect key="frame" x="12" y="12" width="130.5" height="22"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="História do Tiago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfn-VE-EJs">
+                                                            <rect key="frame" x="16" y="16" width="130.5" height="22"/>
                                                             <animations/>
                                                             <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
                                                             <color key="textColor" red="0.47843137254901957" green="0.47843137254901957" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Olá pessoa, meu nome é Tiago. Um alien invadiu a minha casa e roubou meu PS4." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Kx-Pf-0XW">
-                                                            <rect key="frame" x="12" y="42" width="434" height="38.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Olá pessoa, meu nome é Tiago. Um alien invadiu a minha casa e roubou meu PS4." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Kx-Pf-0XW">
+                                                            <rect key="frame" x="16" y="46" width="430" height="95"/>
                                                             <animations/>
                                                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                                             <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -279,6 +279,9 @@
                                         <animations/>
                                         <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
+                                            <outlet property="labelNumSupports" destination="WY5-KQ-gKT" id="ZT3-D3-U6l"/>
+                                            <outlet property="labelTitle" destination="5Kx-Pf-0XW" id="fJ3-4Z-YsC"/>
+                                            <outlet property="labelUser" destination="dfn-VE-EJs" id="nHc-dX-WX0"/>
                                             <outlet property="viewContainer" destination="gb9-yf-l6g" id="Vwz-CS-sRK"/>
                                         </connections>
                                     </tableViewCell>

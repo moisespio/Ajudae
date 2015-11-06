@@ -11,6 +11,10 @@ import UIKit
 class StoriesTableViewCell: UITableViewCell {
     @IBOutlet weak var viewContainer: UIView!
 
+    @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var labelUser: UILabel!
+    @IBOutlet weak var labelNumSupports: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

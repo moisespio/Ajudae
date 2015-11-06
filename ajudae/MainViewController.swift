@@ -57,7 +57,23 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier("donations", sender: nil)
+        switch indexPath.row {
+        case 0 :
+            self.performSegueWithIdentifier("donations", sender: nil)
+            break
+        case 1 :
+            self.performSegueWithIdentifier("stories", sender: nil)
+            break
+        case 2 :
+            self.performSegueWithIdentifier("donations", sender: nil)
+            break
+        case 3 :
+            self.performSegueWithIdentifier("donations", sender: nil)
+            break
+        default :
+            
+            break
+        }
     }
 }
 
