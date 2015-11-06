@@ -35,7 +35,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return self.tableView.frame.height/4 - (self.navigationController?.navigationBar.frame.height)!/4 - 4
+        
+        return self.tableView.frame.height/4 - (self.navigationController?.navigationBar.frame.height)!/4 + 11
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -44,15 +45,19 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         switch indexPath.row {
             case 0 :
                 cell.backgroundColor = UIColor.rosa
+                cell.imageIcon.image = UIImage(named: "HomeIcon1")
             break
             case 1 :
                 cell.backgroundColor = UIColor.laranja
+                cell.imageIcon.image = UIImage(named: "HomeIcon2")
             break
             case 2 :
                 cell.backgroundColor = UIColor.azul
+                cell.imageIcon.image = UIImage(named: "HomeIcon3")
             break
             case 3 :
                 cell.backgroundColor = UIColor.azulbebe
+                cell.imageIcon.image = UIImage(named: "HomeIcon4")
             break
             default :
             
