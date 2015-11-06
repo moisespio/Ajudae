@@ -82,4 +82,7 @@ class DonationsViewController: UIViewController, UICollectionViewDataSource, UIC
             pVC.donation = sender as? Donation
         }
     }
+    
+    @IBAction func unwindSegueFromApplyToDonations(segue: UIStoryboardSegue){
+    }
 }

@@ -72,7 +72,7 @@ class ApplyViewController: UIViewController {
         
         newApplyDonation.saveInBackgroundWithBlock { (succeeded, error) -> Void in
             if succeeded {
-                self.dismissViewControllerAnimated(true, completion: nil)
+                self.performSegueWithIdentifier("unwindSegueFromApplyToDonations", sender: self)
             }
         }
     }
