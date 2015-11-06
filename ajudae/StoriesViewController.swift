@@ -67,8 +67,15 @@ class StoriesViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier("donations", sender: nil)
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let story = stories[indexPath.row]
+        self.performSegueWithIdentifier("showStory", sender: story)
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showStory" {
+            let pVC = segue.destinationViewController as! StoryViewController
+            pVC.story = sender as? Story
+        }
+    }
 }

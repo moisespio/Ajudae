@@ -20,6 +20,8 @@ class StoryViewController: UIViewController {
     @IBOutlet weak var buttonSupport: UIButton!
     @IBOutlet weak var viewWhite: UIView!
 
+    var story : Story?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,6 +35,23 @@ class StoryViewController: UIViewController {
         self.viewMap.clipsToBounds = true
         self.imageProfile.layer.cornerRadius = self.imageProfile.frame.width/2
         self.imageProfile.clipsToBounds = true
+
+        labelUserName.text = story!.user!.name
+        if let photo = story!.user!.image,
+            _url = photo.url {
+                let url = NSURL(string: _url)
+                imageProfile.kf_setImageWithURL(url!, placeholderImage: UIImage(named: "placeholder"))
+        }
+
+        labelCity.text = story!.user!.city
+        labelStoryTitle.text = story!.title
+        labelStoryDescription.text = story!.story
+        if let photo = story!.image,
+            _url = photo.url {
+                let url = NSURL(string: _url)
+                imageStory.kf_setImageWithURL(url!, placeholderImage: UIImage(named: "placeholder"))
+        }
+        labelNeeds.text = "Panelas"
     }
 
     override func didReceiveMemoryWarning() {
