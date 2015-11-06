@@ -25,4 +25,19 @@ class Category: PFObject, PFSubclassing {
     
     @NSManaged var title: String?
     
+    func getCategories(callback: (categories: [Category], error: NSError?) -> ()) {
+        let query = PFQuery(className: Story.parseClassName())
+        
+        query.orderByDescending("createdAt")
+        query.limit = 1000
+        
+        query.findObjectsInBackgroundWithBlock {
+            (objects, error) -> Void in
+            if error == nil {
+                callback(categories: objects as! [Category], error: nil)
+            } else {
+                callback(categories: [], error: error!)
+            }
+        }
+    }
 }

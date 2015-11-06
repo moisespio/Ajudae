@@ -25,5 +25,31 @@ class Needs: PFObject, PFSubclassing {
     
     @NSManaged var title: String?
     @NSManaged var story: Story?
+
+    func getNeeds(story: String?, callback: (needs: [Needs], error: NSError?) -> ()) {
+        let query = PFQuery(className: Story.parseClassName())
+
+        query.orderByDescending("createdAt")
+        query.limit = 1000
+        
+        query.findObjectsInBackgroundWithBlock {
+            (objects, error) -> Void in
+            if error == nil {
+                callback(needs: objects as! [Needs], error: nil)
+            } else {
+                callback(needs: [], error: error!)
+            }
+        }
+    }
     
+    func newNeed(need: Needs, callback: (success: Bool, error: NSError?) -> ()) {
+        need.saveInBackgroundWithBlock {
+            (success, error) -> Void in
+            if success {
+                callback(success: true, error: nil)
+            } else {
+                callback(success: false, error: error!)
+            }
+        }
+    }
 }

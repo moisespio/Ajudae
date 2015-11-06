@@ -33,5 +33,31 @@ class Story: PFObject, PFSubclassing {
     var needs: PFRelation {
         return self.relationForKey("needs")
     }
-    
+
+    func getStories(callback: (stories: [Story], error: NSError?) -> ()) {
+        let query = PFQuery(className: Story.parseClassName())
+
+        query.orderByDescending("createdAt")
+        query.limit = 1000
+
+        query.findObjectsInBackgroundWithBlock {
+            (objects, error) -> Void in
+            if error == nil {
+                callback(stories: objects as! [Story], error: nil)
+            } else {
+                callback(stories: [], error: error!)
+            }
+        }
+    }
+
+    func newStory(story: Story, callback: (success: Bool, error: NSError?) -> ()) {
+        story.saveInBackgroundWithBlock {
+            (success, error) -> Void in
+            if success {
+                callback(success: true, error: nil)
+            } else {
+                callback(success: false, error: error!)
+            }
+        }
+    }
 }
