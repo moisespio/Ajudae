@@ -15,9 +15,6 @@
 		54843B781BEC510C00059A65 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54843B711BEC510C00059A65 /* Story.swift */; };
 		54843B791BEC510C00059A65 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54843B721BEC510C00059A65 /* Support.swift */; };
 		54843B7A1BEC510C00059A65 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54843B731BEC510C00059A65 /* User.swift */; };
-		549606D11BEC475600348AFE /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549606CA1BEC475600348AFE /* Story.swift */; };
-		549606D21BEC475600348AFE /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549606CB1BEC475600348AFE /* Support.swift */; };
-		549606D31BEC475600348AFE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549606CC1BEC475600348AFE /* User.swift */; };
 		800409721BEC440700A6D67C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800409711BEC440700A6D67C /* FeedViewController.swift */; };
 		8004097E1BEC4B4200A6D67C /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 800409741BEC4B4200A6D67C /* OpenSans-Bold.ttf */; };
 		8004097F1BEC4B4200A6D67C /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 800409751BEC4B4200A6D67C /* OpenSans-BoldItalic.ttf */; };
@@ -65,9 +62,6 @@
 		54843B711BEC510C00059A65 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		54843B721BEC510C00059A65 /* Support.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
 		54843B731BEC510C00059A65 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		549606CA1BEC475600348AFE /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
-		549606CB1BEC475600348AFE /* Support.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
-		549606CC1BEC475600348AFE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		800409711BEC440700A6D67C /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = Controller/FeedViewController.swift; sourceTree = "<group>"; };
 		800409741BEC4B4200A6D67C /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		800409751BEC4B4200A6D67C /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -456,10 +450,7 @@
 				80C4CF801BEC394B00044D0E /* AppDelegate.swift in Sources */,
 				54843B7A1BEC510C00059A65 /* User.swift in Sources */,
 				54843B751BEC510C00059A65 /* Category.swift in Sources */,
-				549606D11BEC475600348AFE /* Story.swift in Sources */,
-				549606D31BEC475600348AFE /* User.swift in Sources */,
 				54843B791BEC510C00059A65 /* Support.swift in Sources */,
-				549606D21BEC475600348AFE /* Support.swift in Sources */,
 				54843B771BEC510C00059A65 /* Needs.swift in Sources */,
 				54843B781BEC510C00059A65 /* Story.swift in Sources */,
 			);

@@ -29,7 +29,25 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: MainTableViewCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! MainTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! MainTableViewCell
+        
+        switch indexPath.row {
+            case 0 :
+                cell.backgroundColor = UIColor.redColor()
+            break
+            case 1 :
+                cell.backgroundColor = UIColor.blackColor()
+            break
+            case 2 :
+                cell.backgroundColor = UIColor.greenColor()
+            break
+            case 3 :
+                cell.backgroundColor = UIColor.blueColor()
+            break
+            default :
+            
+            break
+        }
         
         return cell
     }

@@ -24,16 +24,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="159" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k3i-6a-0NU">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="159" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k3i-6a-0NU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="159" id="bbr-w0-oQP" customClass="MainTableViewCell" customModule="ajudae" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="159" id="bbr-w0-oQP" customClass="MainTableViewCell" customModule="ajudae" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="600" height="159"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bbr-w0-oQP" id="njL-Ay-sPw">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="158.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="159"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vhN-g1-2Cj">
@@ -78,6 +78,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="HOB-VT-2ex"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="l4a-B4-hVL"/>
                                 </connections>
                             </tableView>
@@ -85,11 +86,17 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="k3i-6a-0NU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="6NG-ZJ-HRi"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k3i-6a-0NU" secondAttribute="bottom" id="BJc-rW-Dca"/>
                             <constraint firstAttribute="trailing" secondItem="k3i-6a-0NU" secondAttribute="trailing" id="Sjd-pB-9Cs"/>
                             <constraint firstItem="k3i-6a-0NU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TqB-tJ-S2m"/>
                             <constraint firstItem="k3i-6a-0NU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hgo-4u-psV"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hgo-4u-psV"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="n0a-hj-KA5"/>
                     <connections>
