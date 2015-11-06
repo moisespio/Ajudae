@@ -55,8 +55,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         return cell
     }
-    
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.performSegueWithIdentifier("donations", sender: nil)
     }
 }

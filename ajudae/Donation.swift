@@ -29,4 +29,36 @@ class Donation: PFObject, PFSubclassing {
     @NSManaged var countApply: NSNumber?
     @NSManaged var category: Category?
     
+    
+    func getDonations(byCategory: String?, callback: (donations: [Donation], error: NSError?) -> ()) {
+        let query = PFQuery(className: Donation.parseClassName())
+
+        if let category = byCategory {
+            query.whereKey("category", equalTo: Category(withoutDataWithObjectId: category))
+        }
+
+        query.orderByDescending("createdAt")
+        query.limit = 1000
+
+        query.findObjectsInBackgroundWithBlock {
+            (objects, error) -> Void in
+            if error == nil {
+                callback(donations: objects as! [Donation], error: nil)
+            } else {
+                callback(donations: [], error: error!)
+            }
+        }
+    }
+
+    func newDonation(donation: Donation, callback: (success: Bool, error: NSError?) -> ()) {
+        donation.saveInBackgroundWithBlock {
+            (success, error) -> Void in
+            if success {
+                callback(success: true, error: nil)
+            } else {
+                callback(success: false, error: error!)
+            }
+        }
+    }
+
 }

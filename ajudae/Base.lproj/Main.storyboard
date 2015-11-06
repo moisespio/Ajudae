@@ -162,6 +162,9 @@
                                             <constraint firstItem="oRM-Mt-h2O" firstAttribute="leading" secondItem="GI1-s3-St2" secondAttribute="leading" constant="8" id="Da2-S1-0El"/>
                                             <constraint firstAttribute="bottom" secondItem="oRM-Mt-h2O" secondAttribute="bottom" constant="8" id="rw2-vs-vda"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="labelTitle" destination="oRM-Mt-h2O" id="PGN-gF-elB"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -179,6 +182,9 @@
                             <constraint firstItem="QKg-Ua-zZv" firstAttribute="leading" secondItem="gIJ-vg-Zvu" secondAttribute="leading" id="LlS-J1-12a"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="QKg-Ua-zZv" id="aY2-Ed-8Su"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IDk-qz-t8V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
