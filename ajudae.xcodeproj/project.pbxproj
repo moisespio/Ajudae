@@ -497,6 +497,7 @@
 				BF37BF631BEC610600FB1BD5 /* RegisterViewController.swift in Sources */,
 				54843B791BEC510C00059A65 /* Support.swift in Sources */,
 				54843B771BEC510C00059A65 /* Needs.swift in Sources */,
+				80FFE65A1BEC5BDD006093FF /* DonationsCollectionViewCell.swift in Sources */,
 				BF37BF611BEC60FB00FB1BD5 /* LoginViewController.swift in Sources */,
 				54843B781BEC510C00059A65 /* Story.swift in Sources */,
 				BF37BF651BEC614D00FB1BD5 /* PushNotifications.swift in Sources */,
