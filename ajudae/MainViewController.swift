@@ -14,6 +14,11 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let userLogged = User()
+        userLogged.signIn("rvaler", password: "rvaler") { (success, error) -> () in
+            print(success)
+        }
     }
 
     override func didReceiveMemoryWarning() {
