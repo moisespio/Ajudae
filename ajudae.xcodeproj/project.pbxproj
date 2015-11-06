@@ -183,6 +183,7 @@
 		804293C61BEC40FA008A1C20 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				54843B8D1BEC5B1B00059A65 /* StoryCreationTableViewController.swift */,
 				BF37BF5F1BEC608C00FB1BD5 /* Login */,
 				80C4CF811BEC394B00044D0E /* MainViewController.swift */,
 				80631D731BEC4E7F0061A671 /* MainTableViewCell.swift */,
@@ -210,6 +211,7 @@
 				80C4CF881BEC394B00044D0E /* LaunchScreen.storyboard */,
 				804293C31BEC40BA008A1C20 /* Feed.storyboard */,
 				80C4CF831BEC394B00044D0E /* Main.storyboard */,
+				54843B861BEC589900059A65 /* Creation.storyboard */,
 				BF37BF5C1BEC5C7400FB1BD5 /* Login.storyboard */,
 			);
 			name = View;
@@ -492,6 +494,7 @@
 				80FFE6581BEC5B96006093FF /* DonationsViewController.swift in Sources */,
 				80C4CF821BEC394B00044D0E /* MainViewController.swift in Sources */,
 				800409721BEC440700A6D67C /* FeedViewController.swift in Sources */,
+				54843B8E1BEC5B1B00059A65 /* StoryCreationTableViewController.swift in Sources */,
 				BF37BF671BEC615D00FB1BD5 /* Util.swift in Sources */,
 				54843B761BEC510C00059A65 /* Donation.swift in Sources */,
 				BF37BF4E1BEC533600FB1BD5 /* UIColor.swift in Sources */,

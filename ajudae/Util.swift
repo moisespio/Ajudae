@@ -62,8 +62,11 @@ class Util {
 
     static func registerClass() {
         User.registerSubclass()
-        Like.registerSubclass()
-        Post.registerSubclass()
+        Category.registerSubclass()
+        Donation.registerSubclass()
+        Needs.registerSubclass()
+        Story.registerSubclass()
+        Support.registerSubclass()
     }
 
     static func setAppUi() {
