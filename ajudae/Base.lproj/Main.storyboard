@@ -6,9 +6,9 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="OpenSans-Regular.ttf">
-            <string>OpenSans</string>
-            <string>OpenSans</string>
+        <mutableArray key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -45,17 +45,17 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doações" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="got-nG-olf">
-                                                    <rect key="frame" x="118" y="30" width="76.5" height="26"/>
+                                                    <rect key="frame" x="118" y="30" width="74" height="25"/>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="19"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 itens disponíveis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2Q-X2-3un">
-                                                    <rect key="frame" x="118" y="64" width="137.5" height="22"/>
+                                                    <rect key="frame" x="118" y="55" width="142" height="22"/>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -64,7 +64,7 @@
                                                 <constraint firstItem="vhN-g1-2Cj" firstAttribute="centerY" secondItem="njL-Ay-sPw" secondAttribute="centerY" id="Dqq-eL-5YJ"/>
                                                 <constraint firstItem="got-nG-olf" firstAttribute="leading" secondItem="vhN-g1-2Cj" secondAttribute="trailing" constant="10" id="Sq5-kL-3Bn"/>
                                                 <constraint firstItem="got-nG-olf" firstAttribute="top" secondItem="vhN-g1-2Cj" secondAttribute="top" id="TLX-a0-flY"/>
-                                                <constraint firstItem="I2Q-X2-3un" firstAttribute="top" secondItem="got-nG-olf" secondAttribute="bottom" constant="8" id="mM3-3W-1or"/>
+                                                <constraint firstItem="I2Q-X2-3un" firstAttribute="top" secondItem="got-nG-olf" secondAttribute="bottom" id="mM3-3W-1or"/>
                                                 <constraint firstItem="vhN-g1-2Cj" firstAttribute="leading" secondItem="njL-Ay-sPw" secondAttribute="leadingMargin" id="mTH-aH-esu"/>
                                                 <constraint firstItem="I2Q-X2-3un" firstAttribute="leading" secondItem="got-nG-olf" secondAttribute="leading" id="tsD-4A-PNf"/>
                                             </constraints>
@@ -87,13 +87,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="k3i-6a-0NU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="6NG-ZJ-HRi"/>
+                            <constraint firstItem="k3i-6a-0NU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7Ao-g9-vJq"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k3i-6a-0NU" secondAttribute="bottom" id="BJc-rW-Dca"/>
+                            <constraint firstItem="k3i-6a-0NU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LdM-Ee-hpy"/>
                             <constraint firstAttribute="trailing" secondItem="k3i-6a-0NU" secondAttribute="trailing" id="Sjd-pB-9Cs"/>
                             <constraint firstItem="k3i-6a-0NU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TqB-tJ-S2m"/>
                             <constraint firstItem="k3i-6a-0NU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hgo-4u-psV"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="6NG-ZJ-HRi"/>
+                                <exclude reference="7Ao-g9-vJq"/>
                                 <exclude reference="hgo-4u-psV"/>
                             </mask>
                         </variation>

@@ -28,6 +28,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         return  4
     }
     
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return self.tableView.frame.height/4 - (self.navigationController?.navigationBar.frame.height)!/4 - 4
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! MainTableViewCell
         
