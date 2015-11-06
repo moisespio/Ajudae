@@ -39,6 +39,8 @@
 		80C4CFA01BEC394B00044D0E /* ajudaeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4CF9F1BEC394B00044D0E /* ajudaeUITests.swift */; };
 		80FFE6581BEC5B96006093FF /* DonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFE6571BEC5B96006093FF /* DonationsViewController.swift */; };
 		80FFE65A1BEC5BDD006093FF /* DonationsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFE6591BEC5BDD006093FF /* DonationsCollectionViewCell.swift */; };
+		80FFE65C1BEC6222006093FF /* StoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFE65B1BEC6222006093FF /* StoriesViewController.swift */; };
+		80FFE65E1BEC622E006093FF /* StoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFE65D1BEC622E006093FF /* StoriesTableViewCell.swift */; };
 		BF37BF4E1BEC533600FB1BD5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF37BF4D1BEC533600FB1BD5 /* UIColor.swift */; };
 		BF37BF5E1BEC5C7400FB1BD5 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF37BF5C1BEC5C7400FB1BD5 /* Login.storyboard */; };
 		BF37BF611BEC60FB00FB1BD5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF37BF601BEC60FB00FB1BD5 /* LoginViewController.swift */; };
@@ -102,6 +104,8 @@
 		80C4CFA11BEC394B00044D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80FFE6571BEC5B96006093FF /* DonationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationsViewController.swift; sourceTree = "<group>"; };
 		80FFE6591BEC5BDD006093FF /* DonationsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationsCollectionViewCell.swift; sourceTree = "<group>"; };
+		80FFE65B1BEC6222006093FF /* StoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesViewController.swift; sourceTree = "<group>"; };
+		80FFE65D1BEC622E006093FF /* StoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesTableViewCell.swift; sourceTree = "<group>"; };
 		ABC80517ABF06EC52D6FBA8B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BF37BF4D1BEC533600FB1BD5 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		BF37BF5D1BEC5C7400FB1BD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 				800409711BEC440700A6D67C /* FeedViewController.swift */,
 				80FFE6571BEC5B96006093FF /* DonationsViewController.swift */,
 				80FFE6591BEC5BDD006093FF /* DonationsCollectionViewCell.swift */,
+				80FFE65B1BEC6222006093FF /* StoriesViewController.swift */,
+				80FFE65D1BEC622E006093FF /* StoriesTableViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -490,6 +496,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80FFE65C1BEC6222006093FF /* StoriesViewController.swift in Sources */,
+				80FFE65E1BEC622E006093FF /* StoriesTableViewCell.swift in Sources */,
 				54843B741BEC510C00059A65 /* ApplyDonation.swift in Sources */,
 				80FFE6581BEC5B96006093FF /* DonationsViewController.swift in Sources */,
 				80C4CF821BEC394B00044D0E /* MainViewController.swift in Sources */,

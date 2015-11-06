@@ -9,6 +9,7 @@
 import UIKit
 
 class DonationsCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var imageDonation: UIImageView!
     
     @IBOutlet weak var labelTitle: UILabel!
 

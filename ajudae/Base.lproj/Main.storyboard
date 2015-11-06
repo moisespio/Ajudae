@@ -8,8 +8,11 @@
     <customFonts key="customFonts">
         <mutableArray key="OpenSans-Regular.ttf">
             <string>OpenSans</string>
+            <string>OpenSans</string>
         </mutableArray>
         <mutableArray key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
             <string>OpenSans-Semibold</string>
             <string>OpenSans-Semibold</string>
         </mutableArray>
@@ -109,6 +112,7 @@
                     <connections>
                         <outlet property="tableView" destination="k3i-6a-0NU" id="neD-aI-hjM"/>
                         <segue destination="TFr-Ue-bT4" kind="show" identifier="donations" id="I17-if-RQN"/>
+                        <segue destination="a41-bZ-wM4" kind="show" identifier="stories" id="uXN-52-6An"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -145,6 +149,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="166" height="161"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dQP-jn-bq0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="166" height="161"/>
+                                                    <animations/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRM-Mt-h2O">
                                                     <rect key="frame" x="8" y="131" width="95" height="22"/>
                                                     <animations/>
@@ -163,6 +171,7 @@
                                             <constraint firstAttribute="bottom" secondItem="oRM-Mt-h2O" secondAttribute="bottom" constant="8" id="rw2-vs-vda"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="imageDonation" destination="dQP-jn-bq0" id="qxz-rV-LG0"/>
                                             <outlet property="labelTitle" destination="oRM-Mt-h2O" id="PGN-gF-elB"/>
                                         </connections>
                                     </collectionViewCell>
@@ -190,6 +199,113 @@
             </objects>
             <point key="canvasLocation" x="1566" y="-355"/>
         </scene>
+        <!--Stories View Controller-->
+        <scene sceneID="oVS-mD-oRt">
+            <objects>
+                <viewController id="a41-bZ-wM4" customClass="StoriesViewController" customModule="ajudae" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Fq-2S-0Um"/>
+                        <viewControllerLayoutGuide type="bottom" id="nke-cq-dZY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6VY-6D-Mtm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="169" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wie-bS-b7P">
+                                <rect key="frame" x="0.0" y="19" width="600" height="562"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="169" id="I6d-8T-Es1" customClass="StoriesTableViewCell" customModule="ajudae" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="169"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I6d-8T-Es1" id="6LA-eL-jXo">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="169"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gb9-yf-l6g">
+                                                    <rect key="frame" x="12" y="6" width="576" height="157"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="História do Tiago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfn-VE-EJs">
+                                                            <rect key="frame" x="12" y="12" width="130.5" height="22"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
+                                                            <color key="textColor" red="0.47843137254901957" green="0.47843137254901957" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Olá pessoa, meu nome é Tiago. Um alien invadiu a minha casa e roubou meu PS4." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Kx-Pf-0XW">
+                                                            <rect key="frame" x="12" y="42" width="434" height="38.5"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                                                            <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart" translatesAutoresizingMaskIntoConstraints="NO" id="Ocn-nc-KvQ">
+                                                            <rect key="frame" x="536" y="16" width="24" height="20"/>
+                                                            <animations/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WY5-KQ-gKT">
+                                                            <rect key="frame" x="511.5" y="15" width="18.5" height="22"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
+                                                            <color key="textColor" red="1" green="0.090196078431372548" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <animations/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="dfn-VE-EJs" firstAttribute="leading" secondItem="gb9-yf-l6g" secondAttribute="leading" constant="16" id="5xa-TO-wzO"/>
+                                                        <constraint firstItem="Ocn-nc-KvQ" firstAttribute="leading" secondItem="WY5-KQ-gKT" secondAttribute="trailing" constant="6" id="7BJ-6Z-XCM"/>
+                                                        <constraint firstAttribute="bottom" secondItem="5Kx-Pf-0XW" secondAttribute="bottom" constant="16" id="HH5-YP-LmF"/>
+                                                        <constraint firstItem="dfn-VE-EJs" firstAttribute="top" secondItem="gb9-yf-l6g" secondAttribute="top" constant="16" id="IST-dr-xO5"/>
+                                                        <constraint firstAttribute="trailing" secondItem="5Kx-Pf-0XW" secondAttribute="trailing" constant="130" id="Mfj-Kd-wbu"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Ocn-nc-KvQ" secondAttribute="trailing" constant="16" id="YGC-Sc-e7M"/>
+                                                        <constraint firstItem="5Kx-Pf-0XW" firstAttribute="top" secondItem="dfn-VE-EJs" secondAttribute="bottom" constant="8" id="aCf-8X-aSg"/>
+                                                        <constraint firstItem="Ocn-nc-KvQ" firstAttribute="top" secondItem="gb9-yf-l6g" secondAttribute="top" constant="16" id="c6x-AO-j4b"/>
+                                                        <constraint firstItem="5Kx-Pf-0XW" firstAttribute="leading" secondItem="gb9-yf-l6g" secondAttribute="leading" constant="16" id="i3F-oj-Km0"/>
+                                                        <constraint firstItem="WY5-KQ-gKT" firstAttribute="centerY" secondItem="Ocn-nc-KvQ" secondAttribute="centerY" id="qg9-vF-3jF"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="gb9-yf-l6g" firstAttribute="leading" secondItem="6LA-eL-jXo" secondAttribute="leading" constant="12" id="2zx-FI-b1k"/>
+                                                <constraint firstItem="gb9-yf-l6g" firstAttribute="top" secondItem="6LA-eL-jXo" secondAttribute="top" constant="6" id="3to-NR-spH"/>
+                                                <constraint firstAttribute="trailing" secondItem="gb9-yf-l6g" secondAttribute="trailing" constant="12" id="CTJ-En-T0A"/>
+                                                <constraint firstAttribute="bottom" secondItem="gb9-yf-l6g" secondAttribute="bottom" constant="6" id="hLS-HO-ZkB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="viewContainer" destination="gb9-yf-l6g" id="Vwz-CS-sRK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="a41-bZ-wM4" id="oj7-j7-Khp"/>
+                                    <outlet property="delegate" destination="a41-bZ-wM4" id="bW8-PQ-g5H"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nke-cq-dZY" firstAttribute="top" secondItem="wie-bS-b7P" secondAttribute="bottom" constant="19" id="Gm3-H7-Edj"/>
+                            <constraint firstAttribute="trailing" secondItem="wie-bS-b7P" secondAttribute="trailing" id="R2o-Qs-2kn"/>
+                            <constraint firstItem="wie-bS-b7P" firstAttribute="leading" secondItem="6VY-6D-Mtm" secondAttribute="leading" id="SfT-8F-xFM"/>
+                            <constraint firstItem="wie-bS-b7P" firstAttribute="top" secondItem="6VY-6D-Mtm" secondAttribute="top" constant="19" id="fDw-jc-Qlg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="wie-bS-b7P" id="Car-f9-vYA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3PO-6b-38a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="409"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="tJQ-Fi-9Ig">
             <objects>
@@ -210,4 +326,7 @@
             <point key="canvasLocation" x="142" y="-355"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Heart" width="24" height="20"/>
+    </resources>
 </document>
