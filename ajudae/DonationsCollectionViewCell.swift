@@ -9,6 +9,7 @@
 import UIKit
 
 class DonationsCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var imageDonation: UIImageView!
     
     override func drawRect(rect: CGRect) {
         self.layer.cornerRadius = 4

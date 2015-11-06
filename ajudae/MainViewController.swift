@@ -57,7 +57,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier("donations", sender: nil)
+        self.performSegueWithIdentifier("stories", sender: nil)
     }
 }
 
