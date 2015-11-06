@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F481A63E1E8911F2B322635 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD94E1AAD05D4496AF6B2FC /* Pods.framework */; };
+		800409721BEC440700A6D67C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800409711BEC440700A6D67C /* FeedViewController.swift */; };
 		804293C51BEC40BA008A1C20 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804293C31BEC40BA008A1C20 /* Feed.storyboard */; };
 		80C4CF801BEC394B00044D0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4CF7F1BEC394B00044D0E /* AppDelegate.swift */; };
 		80C4CF821BEC394B00044D0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4CF811BEC394B00044D0E /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		800409711BEC440700A6D67C /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = Controller/FeedViewController.swift; sourceTree = "<group>"; };
 		804293C41BEC40BA008A1C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Feed.storyboard; sourceTree = "<group>"; };
 		80C4CF7C1BEC394B00044D0E /* ajudae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ajudae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C4CF7F1BEC394B00044D0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				80C4CF811BEC394B00044D0E /* ViewController.swift */,
+				800409711BEC440700A6D67C /* FeedViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C4CF821BEC394B00044D0E /* ViewController.swift in Sources */,
+				800409721BEC440700A6D67C /* FeedViewController.swift in Sources */,
 				80C4CF801BEC394B00044D0E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
