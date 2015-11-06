@@ -17,6 +17,7 @@
 		54843B7A1BEC510C00059A65 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54843B731BEC510C00059A65 /* User.swift */; };
 		54843B871BEC589900059A65 /* Creation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54843B861BEC589900059A65 /* Creation.storyboard */; };
 		54843B8E1BEC5B1B00059A65 /* StoryCreationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54843B8D1BEC5B1B00059A65 /* StoryCreationTableViewController.swift */; };
+		54FE19B31BEC8CEC0049BCFA /* DonationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE19B21BEC8CEC0049BCFA /* DonationDetailsViewController.swift */; };
 		800409721BEC440700A6D67C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800409711BEC440700A6D67C /* FeedViewController.swift */; };
 		8004097E1BEC4B4200A6D67C /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 800409741BEC4B4200A6D67C /* OpenSans-Bold.ttf */; };
 		8004097F1BEC4B4200A6D67C /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 800409751BEC4B4200A6D67C /* OpenSans-BoldItalic.ttf */; };
@@ -43,6 +44,8 @@
 		80FFE65E1BEC622E006093FF /* StoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFE65D1BEC622E006093FF /* StoriesTableViewCell.swift */; };
 		80FFE6601BEC7394006093FF /* ApplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFE65F1BEC7394006093FF /* ApplyViewController.swift */; };
 		80FFE6621BEC7C1F006093FF /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFE6611BEC7C1F006093FF /* StoryViewController.swift */; };
+		80FFE6641BEC8C06006093FF /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFE6631BEC8C06006093FF /* FiltersViewController.swift */; };
+		80FFE6661BEC8CC7006093FF /* FiltersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFE6651BEC8CC7006093FF /* FiltersTableViewCell.swift */; };
 		BF37BF4E1BEC533600FB1BD5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF37BF4D1BEC533600FB1BD5 /* UIColor.swift */; };
 		BF37BF5E1BEC5C7400FB1BD5 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF37BF5C1BEC5C7400FB1BD5 /* Login.storyboard */; };
 		BF37BF611BEC60FB00FB1BD5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF37BF601BEC60FB00FB1BD5 /* LoginViewController.swift */; };
@@ -78,6 +81,7 @@
 		54843B731BEC510C00059A65 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		54843B861BEC589900059A65 /* Creation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Creation.storyboard; sourceTree = "<group>"; };
 		54843B8D1BEC5B1B00059A65 /* StoryCreationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryCreationTableViewController.swift; sourceTree = "<group>"; };
+		54FE19B21BEC8CEC0049BCFA /* DonationDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationDetailsViewController.swift; sourceTree = "<group>"; };
 		800409711BEC440700A6D67C /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = Controller/FeedViewController.swift; sourceTree = "<group>"; };
 		800409741BEC4B4200A6D67C /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		800409751BEC4B4200A6D67C /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 		80FFE65D1BEC622E006093FF /* StoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesTableViewCell.swift; sourceTree = "<group>"; };
 		80FFE65F1BEC7394006093FF /* ApplyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyViewController.swift; sourceTree = "<group>"; };
 		80FFE6611BEC7C1F006093FF /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		80FFE6631BEC8C06006093FF /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
+		80FFE6651BEC8CC7006093FF /* FiltersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersTableViewCell.swift; sourceTree = "<group>"; };
 		ABC80517ABF06EC52D6FBA8B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BF37BF4D1BEC533600FB1BD5 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		BF37BF5D1BEC5C7400FB1BD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
@@ -202,6 +208,9 @@
 				80FFE65D1BEC622E006093FF /* StoriesTableViewCell.swift */,
 				80FFE65F1BEC7394006093FF /* ApplyViewController.swift */,
 				80FFE6611BEC7C1F006093FF /* StoryViewController.swift */,
+				54FE19B21BEC8CEC0049BCFA /* DonationDetailsViewController.swift */,
+				80FFE6631BEC8C06006093FF /* FiltersViewController.swift */,
+				80FFE6651BEC8CC7006093FF /* FiltersTableViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -509,7 +518,9 @@
 				80FFE6581BEC5B96006093FF /* DonationsViewController.swift in Sources */,
 				80C4CF821BEC394B00044D0E /* MainViewController.swift in Sources */,
 				80FFE6621BEC7C1F006093FF /* StoryViewController.swift in Sources */,
+				54FE19B31BEC8CEC0049BCFA /* DonationDetailsViewController.swift in Sources */,
 				800409721BEC440700A6D67C /* FeedViewController.swift in Sources */,
+				80FFE6661BEC8CC7006093FF /* FiltersTableViewCell.swift in Sources */,
 				54843B8E1BEC5B1B00059A65 /* StoryCreationTableViewController.swift in Sources */,
 				BF37BF671BEC615D00FB1BD5 /* Util.swift in Sources */,
 				54843B761BEC510C00059A65 /* Donation.swift in Sources */,
@@ -524,6 +535,7 @@
 				80FFE65A1BEC5BDD006093FF /* DonationsCollectionViewCell.swift in Sources */,
 				BF37BF611BEC60FB00FB1BD5 /* LoginViewController.swift in Sources */,
 				54843B781BEC510C00059A65 /* Story.swift in Sources */,
+				80FFE6641BEC8C06006093FF /* FiltersViewController.swift in Sources */,
 				BF37BF651BEC614D00FB1BD5 /* PushNotifications.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

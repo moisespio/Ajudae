@@ -61,19 +61,19 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             break
             case 1 :
                 cell.labelTitle.text = "Histórias"
-                cell.labelDescription.text = "Mais de 100 histórias, ajude"
+                cell.labelDescription.text = "Mais de 100 histórias"
                 cell.backgroundColor = UIColor.laranja
                 cell.imageIcon.image = UIImage(named: "HomeIcon2")
             break
             case 2 :
                 cell.labelTitle.text = "Quero doar"
-                cell.labelDescription.text = "Ajude alguém, Desapegue"
+                cell.labelDescription.text = "Desapegue e doe"
                 cell.backgroundColor = UIColor.azul
                 cell.imageIcon.image = UIImage(named: "HomeIcon3")
             break
             case 3 :
                 cell.labelTitle.text = "Criar história"
-                cell.labelDescription.text = "Ajude a mudar a vida de uma pessoa"
+                cell.labelDescription.text = "Conte a sua história"
                 cell.backgroundColor = UIColor.azulbebe
                 cell.imageIcon.image = UIImage(named: "HomeIcon4")
             break

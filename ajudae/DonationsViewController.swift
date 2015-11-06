@@ -86,7 +86,7 @@ class DonationsViewController: UIViewController, UICollectionViewDataSource, UIC
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "segueApplyForDonation" {
-            let pVC = segue.destinationViewController as! ApplyViewController
+            let pVC = segue.destinationViewController as! DonationDetailsViewController
             pVC.donation = sender as? Donation
         }
     }

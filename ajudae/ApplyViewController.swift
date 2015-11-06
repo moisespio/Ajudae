@@ -14,8 +14,7 @@ class ApplyViewController: UIViewController {
     @IBOutlet weak var labelCity: UILabel!
     @IBOutlet weak var textViewMessage: UITextView!
     @IBOutlet weak var buttonSend: UIButton!
-    @IBOutlet weak var labelItemTitle: UILabel!
-    @IBOutlet weak var labelItemDescription: UILabel!
+
 
     var donation: Donation?
     
@@ -53,8 +52,6 @@ class ApplyViewController: UIViewController {
         }
         
         self.navigationItem.title = _donation.title
-        self.labelItemTitle.text = _donation.title
-        self.labelItemDescription.text = _donation.about
     }
 
     @IBAction func applyForDonation(sender: AnyObject) {
