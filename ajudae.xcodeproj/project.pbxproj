@@ -36,6 +36,11 @@
 		80C4CF951BEC394B00044D0E /* ajudaeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4CF941BEC394B00044D0E /* ajudaeTests.swift */; };
 		80C4CFA01BEC394B00044D0E /* ajudaeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4CF9F1BEC394B00044D0E /* ajudaeUITests.swift */; };
 		BF37BF4E1BEC533600FB1BD5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF37BF4D1BEC533600FB1BD5 /* UIColor.swift */; };
+		BF37BF5E1BEC5C7400FB1BD5 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF37BF5C1BEC5C7400FB1BD5 /* Login.storyboard */; };
+		BF37BF611BEC60FB00FB1BD5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF37BF601BEC60FB00FB1BD5 /* LoginViewController.swift */; };
+		BF37BF631BEC610600FB1BD5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF37BF621BEC610600FB1BD5 /* RegisterViewController.swift */; };
+		BF37BF651BEC614D00FB1BD5 /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF37BF641BEC614D00FB1BD5 /* PushNotifications.swift */; };
+		BF37BF671BEC615D00FB1BD5 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF37BF661BEC615D00FB1BD5 /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +96,11 @@
 		80C4CFA11BEC394B00044D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABC80517ABF06EC52D6FBA8B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BF37BF4D1BEC533600FB1BD5 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		BF37BF5D1BEC5C7400FB1BD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		BF37BF601BEC60FB00FB1BD5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BF37BF621BEC610600FB1BD5 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		BF37BF641BEC614D00FB1BD5 /* PushNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotifications.swift; sourceTree = "<group>"; };
+		BF37BF661BEC615D00FB1BD5 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		E139CCCC4156BFAEC8B12A42 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FCD94E1AAD05D4496AF6B2FC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -140,6 +150,7 @@
 				54843B711BEC510C00059A65 /* Story.swift */,
 				54843B721BEC510C00059A65 /* Support.swift */,
 				54843B731BEC510C00059A65 /* User.swift */,
+				BF37BF641BEC614D00FB1BD5 /* PushNotifications.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -164,6 +175,7 @@
 		804293C61BEC40FA008A1C20 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BF37BF5F1BEC608C00FB1BD5 /* Login */,
 				80C4CF811BEC394B00044D0E /* MainViewController.swift */,
 				800409711BEC440700A6D67C /* FeedViewController.swift */,
 				80631D731BEC4E7F0061A671 /* MainTableViewCell.swift */,
@@ -188,6 +200,7 @@
 				80C4CF881BEC394B00044D0E /* LaunchScreen.storyboard */,
 				804293C31BEC40BA008A1C20 /* Feed.storyboard */,
 				80C4CF831BEC394B00044D0E /* Main.storyboard */,
+				BF37BF5C1BEC5C7400FB1BD5 /* Login.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -217,6 +230,7 @@
 		80C4CF7E1BEC394B00044D0E /* ajudae */ = {
 			isa = PBXGroup;
 			children = (
+				BF37BF661BEC615D00FB1BD5 /* Util.swift */,
 				BF37BF4C1BEC530F00FB1BD5 /* Extensions */,
 				54843B6C1BEC508D00059A65 /* Model */,
 				804293C71BEC4102008A1C20 /* Application */,
@@ -250,6 +264,15 @@
 				BF37BF4D1BEC533600FB1BD5 /* UIColor.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		BF37BF5F1BEC608C00FB1BD5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BF37BF601BEC60FB00FB1BD5 /* LoginViewController.swift */,
+				BF37BF621BEC610600FB1BD5 /* RegisterViewController.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		CA47C9569607135766E63889 /* Frameworks */ = {
@@ -375,6 +398,7 @@
 				80C4CF871BEC394B00044D0E /* Assets.xcassets in Resources */,
 				800409841BEC4B4200A6D67C /* OpenSans-LightItalic.ttf in Resources */,
 				804293C51BEC40BA008A1C20 /* Feed.storyboard in Resources */,
+				BF37BF5E1BEC5C7400FB1BD5 /* Login.storyboard in Resources */,
 				8004097E1BEC4B4200A6D67C /* OpenSans-Bold.ttf in Resources */,
 				80C4CF851BEC394B00044D0E /* Main.storyboard in Resources */,
 				800409871BEC4B4200A6D67C /* OpenSans-SemiboldItalic.ttf in Resources */,
@@ -456,15 +480,19 @@
 				54843B741BEC510C00059A65 /* ApplyDonation.swift in Sources */,
 				80C4CF821BEC394B00044D0E /* MainViewController.swift in Sources */,
 				800409721BEC440700A6D67C /* FeedViewController.swift in Sources */,
+				BF37BF671BEC615D00FB1BD5 /* Util.swift in Sources */,
 				54843B761BEC510C00059A65 /* Donation.swift in Sources */,
 				BF37BF4E1BEC533600FB1BD5 /* UIColor.swift in Sources */,
 				80631D741BEC4E7F0061A671 /* MainTableViewCell.swift in Sources */,
 				80C4CF801BEC394B00044D0E /* AppDelegate.swift in Sources */,
 				54843B7A1BEC510C00059A65 /* User.swift in Sources */,
 				54843B751BEC510C00059A65 /* Category.swift in Sources */,
+				BF37BF631BEC610600FB1BD5 /* RegisterViewController.swift in Sources */,
 				54843B791BEC510C00059A65 /* Support.swift in Sources */,
 				54843B771BEC510C00059A65 /* Needs.swift in Sources */,
+				BF37BF611BEC60FB00FB1BD5 /* LoginViewController.swift in Sources */,
 				54843B781BEC510C00059A65 /* Story.swift in Sources */,
+				BF37BF651BEC614D00FB1BD5 /* PushNotifications.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +550,14 @@
 				80C4CF891BEC394B00044D0E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BF37BF5C1BEC5C7400FB1BD5 /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF37BF5D1BEC5C7400FB1BD5 /* Base */,
+			);
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
