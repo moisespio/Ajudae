@@ -8,7 +8,10 @@
     <customFonts key="customFonts">
         <mutableArray key="OpenSans-Regular.ttf">
             <string>OpenSans</string>
-            <string>OpenSans</string>
+        </mutableArray>
+        <mutableArray key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -45,17 +48,17 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doações" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="got-nG-olf">
-                                                    <rect key="frame" x="118" y="30" width="76.5" height="26"/>
+                                                    <rect key="frame" x="118" y="30" width="74" height="25"/>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="19"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 itens disponíveis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2Q-X2-3un">
-                                                    <rect key="frame" x="118" y="64" width="137.5" height="22"/>
+                                                    <rect key="frame" x="118" y="55" width="142" height="22"/>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -64,7 +67,7 @@
                                                 <constraint firstItem="vhN-g1-2Cj" firstAttribute="centerY" secondItem="njL-Ay-sPw" secondAttribute="centerY" id="Dqq-eL-5YJ"/>
                                                 <constraint firstItem="got-nG-olf" firstAttribute="leading" secondItem="vhN-g1-2Cj" secondAttribute="trailing" constant="10" id="Sq5-kL-3Bn"/>
                                                 <constraint firstItem="got-nG-olf" firstAttribute="top" secondItem="vhN-g1-2Cj" secondAttribute="top" id="TLX-a0-flY"/>
-                                                <constraint firstItem="I2Q-X2-3un" firstAttribute="top" secondItem="got-nG-olf" secondAttribute="bottom" constant="8" id="mM3-3W-1or"/>
+                                                <constraint firstItem="I2Q-X2-3un" firstAttribute="top" secondItem="got-nG-olf" secondAttribute="bottom" id="mM3-3W-1or"/>
                                                 <constraint firstItem="vhN-g1-2Cj" firstAttribute="leading" secondItem="njL-Ay-sPw" secondAttribute="leadingMargin" id="mTH-aH-esu"/>
                                                 <constraint firstItem="I2Q-X2-3un" firstAttribute="leading" secondItem="got-nG-olf" secondAttribute="leading" id="tsD-4A-PNf"/>
                                             </constraints>
@@ -87,13 +90,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="k3i-6a-0NU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="6NG-ZJ-HRi"/>
+                            <constraint firstItem="k3i-6a-0NU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7Ao-g9-vJq"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k3i-6a-0NU" secondAttribute="bottom" id="BJc-rW-Dca"/>
+                            <constraint firstItem="k3i-6a-0NU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LdM-Ee-hpy"/>
                             <constraint firstAttribute="trailing" secondItem="k3i-6a-0NU" secondAttribute="trailing" id="Sjd-pB-9Cs"/>
                             <constraint firstItem="k3i-6a-0NU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TqB-tJ-S2m"/>
                             <constraint firstItem="k3i-6a-0NU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hgo-4u-psV"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="6NG-ZJ-HRi"/>
+                                <exclude reference="7Ao-g9-vJq"/>
                                 <exclude reference="hgo-4u-psV"/>
                             </mask>
                         </variation>
@@ -101,11 +108,81 @@
                     <navigationItem key="navigationItem" id="n0a-hj-KA5"/>
                     <connections>
                         <outlet property="tableView" destination="k3i-6a-0NU" id="neD-aI-hjM"/>
+                        <segue destination="TFr-Ue-bT4" kind="show" identifier="donations" id="I17-if-RQN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="863" y="-355"/>
+        </scene>
+        <!--Donations View Controller-->
+        <scene sceneID="5Z0-6X-bS0">
+            <objects>
+                <viewController id="TFr-Ue-bT4" customClass="DonationsViewController" customModule="ajudae" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1f8-av-dt3"/>
+                        <viewControllerLayoutGuide type="bottom" id="nlh-u0-I7W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gIJ-vg-Zvu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QKg-Ua-zZv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="16" id="4oE-ac-PgA">
+                                    <size key="itemSize" width="166" height="161"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="16" minY="32" maxX="16" maxY="32"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="GI1-s3-St2" customClass="DonationsCollectionViewCell" customModule="ajudae" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="96" width="166" height="161"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="166" height="161"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRM-Mt-h2O">
+                                                    <rect key="frame" x="8" y="131" width="95" height="22"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                                                    <color key="textColor" red="0.47843137254901957" green="0.47843137254901957" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="oRM-Mt-h2O" firstAttribute="leading" secondItem="GI1-s3-St2" secondAttribute="leading" constant="8" id="Da2-S1-0El"/>
+                                            <constraint firstAttribute="bottom" secondItem="oRM-Mt-h2O" secondAttribute="bottom" constant="8" id="rw2-vs-vda"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="TFr-Ue-bT4" id="Xyy-Kx-TFs"/>
+                                    <outlet property="delegate" destination="TFr-Ue-bT4" id="G6n-sO-zsf"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nlh-u0-I7W" firstAttribute="top" secondItem="QKg-Ua-zZv" secondAttribute="bottom" id="1Bu-z9-eGq"/>
+                            <constraint firstAttribute="trailing" secondItem="QKg-Ua-zZv" secondAttribute="trailing" id="BvS-KL-DfS"/>
+                            <constraint firstItem="QKg-Ua-zZv" firstAttribute="top" secondItem="gIJ-vg-Zvu" secondAttribute="top" id="KkY-tI-OTO"/>
+                            <constraint firstItem="QKg-Ua-zZv" firstAttribute="leading" secondItem="gIJ-vg-Zvu" secondAttribute="leading" id="LlS-J1-12a"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IDk-qz-t8V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1566" y="-355"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tJQ-Fi-9Ig">
