@@ -18,4 +18,12 @@ class User: PFUser {
             self.registerSubclass()
         }
     }
+    
+    @NSManaged var name: String?
+    @NSManaged var phone: String?
+    @NSManaged var address: String?
+    var isOrganization: Bool {
+        get { return self["active"] as! Bool }
+        set { self["active"] = newValue }
+    }
 }
