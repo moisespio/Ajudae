@@ -64,14 +64,14 @@
                                                         <constraint firstAttribute="height" constant="150" id="tC7-Lp-PfD"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doações" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="got-nG-olf">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Doações" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="got-nG-olf">
                                                     <rect key="frame" x="118" y="30" width="74" height="25"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 itens disponíveis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2Q-X2-3un">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2 itens disponíveis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2Q-X2-3un">
                                                     <rect key="frame" x="118" y="55" width="142" height="22"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
@@ -179,6 +179,13 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="166" height="161"/>
                                                     <animations/>
                                                 </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadow" translatesAutoresizingMaskIntoConstraints="NO" id="WXX-3v-819">
+                                                    <rect key="frame" x="0.0" y="96" width="166" height="65"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="65" id="F17-GK-LrG"/>
+                                                    </constraints>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRM-Mt-h2O">
                                                     <rect key="frame" x="8" y="131" width="95" height="22"/>
                                                     <animations/>
@@ -194,6 +201,9 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="oRM-Mt-h2O" firstAttribute="leading" secondItem="GI1-s3-St2" secondAttribute="leading" constant="8" id="Da2-S1-0El"/>
+                                            <constraint firstItem="WXX-3v-819" firstAttribute="leading" secondItem="GI1-s3-St2" secondAttribute="leading" id="NAP-57-pm2"/>
+                                            <constraint firstAttribute="trailing" secondItem="WXX-3v-819" secondAttribute="trailing" id="juA-8n-wdi"/>
+                                            <constraint firstAttribute="bottom" secondItem="WXX-3v-819" secondAttribute="bottom" id="p20-Hv-S6G"/>
                                             <constraint firstAttribute="bottom" secondItem="oRM-Mt-h2O" secondAttribute="bottom" constant="8" id="rw2-vs-vda"/>
                                         </constraints>
                                         <connections>
@@ -741,5 +751,6 @@
     </scenes>
     <resources>
         <image name="Heart" width="24" height="20"/>
+        <image name="Shadow" width="170" height="65"/>
     </resources>
 </document>
