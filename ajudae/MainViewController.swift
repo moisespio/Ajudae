@@ -33,16 +33,16 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         switch indexPath.row {
             case 0 :
-                cell.backgroundColor = UIColor.redColor()
+                cell.backgroundColor = UIColor.rosa
             break
             case 1 :
-                cell.backgroundColor = UIColor.blackColor()
+                cell.backgroundColor = UIColor.laranja
             break
             case 2 :
-                cell.backgroundColor = UIColor.greenColor()
+                cell.backgroundColor = UIColor.azul
             break
             case 3 :
-                cell.backgroundColor = UIColor.blueColor()
+                cell.backgroundColor = UIColor.azulbebe
             break
             default :
             
