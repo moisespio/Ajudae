@@ -65,14 +65,14 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doações" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="got-nG-olf">
-                                                    <rect key="frame" x="148" y="55" width="74" height="25"/>
+                                                    <rect key="frame" x="118" y="30" width="74" height="25"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 itens disponíveis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2Q-X2-3un">
-                                                    <rect key="frame" x="148" y="80" width="142" height="22"/>
+                                                    <rect key="frame" x="118" y="55" width="142" height="22"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -219,6 +219,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="QKg-Ua-zZv" id="aY2-Ed-8Su"/>
+                        <segue destination="KGe-rV-EZW" kind="show" identifier="segueApplyForDonation" id="zSf-OE-d84"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IDk-qz-t8V" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -432,6 +433,9 @@
                                         <state key="normal" title="Eu preciso">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="applyForDonation:" destination="KGe-rV-EZW" eventType="touchUpInside" id="CVs-YA-qSm"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sofá velho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxX-Rc-sM5">
                                         <rect key="frame" x="12" y="414" width="80" height="22"/>
@@ -475,6 +479,7 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ZZG-Og-OyN" firstAttribute="leading" secondItem="m8C-Ie-57o" secondAttribute="leading" id="702-gC-W07"/>
                             <constraint firstAttribute="trailing" secondItem="ZZG-Og-OyN" secondAttribute="trailing" id="Cag-sT-AJP"/>
