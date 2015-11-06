@@ -26,4 +26,80 @@ class User: PFUser {
         get { return self["active"] as! Bool }
         set { self["active"] = newValue }
     }
+    
+    func signIn(username: String?, password: String?, callback: (success: Bool, error: NSError?) -> ()) {
+        User.logInWithUsernameInBackground(username!, password: password!, block: { (user, error) -> Void in
+            if(error == nil) {
+                callback(success: true, error: nil)
+            } else {
+                callback(success: false, error: error)
+            }
+        })
+    }
+    
+    func resetPassword(email: String?, callback: (success: Bool, error: NSError?) -> ()) {
+        User.requestPasswordResetForEmailInBackground(email!, block: { (success, error) -> Void in
+            if(success) {
+                callback(success: true, error: nil)
+            } else {
+                callback(success: false, error: error)
+            }
+        })
+    }
+    
+    func register(user: User?, callback: (success: Bool, error: NSError?) -> ()) {
+        user?.signUpInBackgroundWithBlock({ (success, error) -> Void in
+            if(success) {
+                callback(success: true, error: nil)
+            } else {
+                callback(success: false, error: error)
+            }
+        })
+    }
+    
+    func editUser(user: User, callback: (success: Bool, error: NSError?) -> ()) {
+        user.saveInBackgroundWithBlock({ (success, error) -> Void in
+            if(success) {
+                callback(success: true, error: nil)
+            } else {
+                callback(success: false, error: error)
+            }
+        })
+    }
+    
+    func verifyUsername(username: String?, callback: (success: Bool, error: NSError?) -> ()) {
+        let queryCapitalizedString = User.query()!
+        queryCapitalizedString.whereKey("nameuser", equalTo:username!.capitalizedString);
+        
+        let queryLowerCaseString = User.query()!
+        queryLowerCaseString.whereKey("nameuser", equalTo:username!.lowercaseString);
+        
+        let queryNormalString = User.query()!
+        queryNormalString.whereKey("nameuser", equalTo:username!);
+        
+        let finalQuery = PFQuery.orQueryWithSubqueries([queryCapitalizedString, queryLowerCaseString, queryNormalString])
+        
+        finalQuery.countObjectsInBackgroundWithBlock { (count, error) -> Void in
+            if(count > 0) {
+                callback(success: false, error: nil)
+            } else {
+                callback(success: true, error: error)
+            }
+        }
+    }
+    
+    
+    func verifyEmail(email: String, callback: (success: Bool, error: NSError?) -> ()) {
+        let query = User.query()!
+        query.whereKey("username", equalTo:email);
+        
+        query.countObjectsInBackgroundWithBlock { (count, error) -> Void in
+            if(count > 0) {
+                callback(success: false, error: nil)
+            } else {
+                callback(success: true, error: error)
+            }
+        }
+    }
+
 }

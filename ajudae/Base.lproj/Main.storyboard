@@ -190,6 +190,9 @@
                             <constraint firstItem="QKg-Ua-zZv" firstAttribute="leading" secondItem="gIJ-vg-Zvu" secondAttribute="leading" id="LlS-J1-12a"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="QKg-Ua-zZv" id="aY2-Ed-8Su"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IDk-qz-t8V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

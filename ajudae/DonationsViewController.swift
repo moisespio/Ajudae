@@ -9,21 +9,42 @@
 import UIKit
 
 class DonationsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+
+    var donations : [Donation] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        getDonations()
+    }
+    
+    func getDonations() {
+        let donation = Donation()
+        
+        donation.getDonations(nil) { (donations, error) -> () in
+            if donations.count > 0 {
+                self.donations += donations
+                self.updateTableView()
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
+    func updateTableView() {
+        collectionView.reloadData()
+    }
+
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return self.donations.count
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
@@ -35,8 +56,12 @@ class DonationsViewController: UIViewController, UICollectionViewDataSource, UIC
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath)
-        
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! DonationsCollectionViewCell
+
+        let donation = donations[indexPath.row]
+
+        cell.labelTitle.text = donation.title
+
         return cell
     }
 }

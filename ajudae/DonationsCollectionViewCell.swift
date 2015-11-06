@@ -11,6 +11,8 @@ import UIKit
 class DonationsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageDonation: UIImageView!
     
+    @IBOutlet weak var labelTitle: UILabel!
+
     override func drawRect(rect: CGRect) {
         self.layer.cornerRadius = 4
         self.clipsToBounds = true
