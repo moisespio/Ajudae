@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0F481A63E1E8911F2B322635 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD94E1AAD05D4496AF6B2FC /* Pods.framework */; };
-		549606CD1BEC475600348AFE /* ApplyDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549606C61BEC475600348AFE /* ApplyDonation.swift */; };
-		549606CE1BEC475600348AFE /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549606C71BEC475600348AFE /* Category.swift */; };
-		549606CF1BEC475600348AFE /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549606C81BEC475600348AFE /* Donation.swift */; };
-		549606D01BEC475600348AFE /* Needs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549606C91BEC475600348AFE /* Needs.swift */; };
+		54843B741BEC510C00059A65 /* ApplyDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54843B6D1BEC510C00059A65 /* ApplyDonation.swift */; };
+		54843B751BEC510C00059A65 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54843B6E1BEC510C00059A65 /* Category.swift */; };
+		54843B761BEC510C00059A65 /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54843B6F1BEC510C00059A65 /* Donation.swift */; };
+		54843B771BEC510C00059A65 /* Needs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54843B701BEC510C00059A65 /* Needs.swift */; };
+		54843B781BEC510C00059A65 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54843B711BEC510C00059A65 /* Story.swift */; };
+		54843B791BEC510C00059A65 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54843B721BEC510C00059A65 /* Support.swift */; };
+		54843B7A1BEC510C00059A65 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54843B731BEC510C00059A65 /* User.swift */; };
 		549606D11BEC475600348AFE /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549606CA1BEC475600348AFE /* Story.swift */; };
 		549606D21BEC475600348AFE /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549606CB1BEC475600348AFE /* Support.swift */; };
 		549606D31BEC475600348AFE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549606CC1BEC475600348AFE /* User.swift */; };
@@ -55,10 +58,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		549606C61BEC475600348AFE /* ApplyDonation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyDonation.swift; sourceTree = "<group>"; };
-		549606C71BEC475600348AFE /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		549606C81BEC475600348AFE /* Donation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
-		549606C91BEC475600348AFE /* Needs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Needs.swift; sourceTree = "<group>"; };
+		54843B6D1BEC510C00059A65 /* ApplyDonation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyDonation.swift; sourceTree = "<group>"; };
+		54843B6E1BEC510C00059A65 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		54843B6F1BEC510C00059A65 /* Donation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
+		54843B701BEC510C00059A65 /* Needs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Needs.swift; sourceTree = "<group>"; };
+		54843B711BEC510C00059A65 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		54843B721BEC510C00059A65 /* Support.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
+		54843B731BEC510C00059A65 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		549606CA1BEC475600348AFE /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		549606CB1BEC475600348AFE /* Support.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
 		549606CC1BEC475600348AFE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -126,6 +132,20 @@
 				ABC80517ABF06EC52D6FBA8B /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		54843B6C1BEC508D00059A65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54843B6D1BEC510C00059A65 /* ApplyDonation.swift */,
+				54843B6E1BEC510C00059A65 /* Category.swift */,
+				54843B6F1BEC510C00059A65 /* Donation.swift */,
+				54843B701BEC510C00059A65 /* Needs.swift */,
+				54843B711BEC510C00059A65 /* Story.swift */,
+				54843B721BEC510C00059A65 /* Support.swift */,
+				54843B731BEC510C00059A65 /* User.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		800409731BEC4B3500A6D67C /* Fonts */ = {
@@ -201,7 +221,7 @@
 		80C4CF7E1BEC394B00044D0E /* ajudae */ = {
 			isa = PBXGroup;
 			children = (
-				549606C51BEC474000348AFE /* Model */,
+				54843B6C1BEC508D00059A65 /* Model */,
 				804293C71BEC4102008A1C20 /* Application */,
 				804293C61BEC40FA008A1C20 /* Controller */,
 				804293C81BEC4119008A1C20 /* View */,
@@ -428,13 +448,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54843B741BEC510C00059A65 /* ApplyDonation.swift in Sources */,
 				80C4CF821BEC394B00044D0E /* MainViewController.swift in Sources */,
 				800409721BEC440700A6D67C /* FeedViewController.swift in Sources */,
+				54843B761BEC510C00059A65 /* Donation.swift in Sources */,
 				80631D741BEC4E7F0061A671 /* MainTableViewCell.swift in Sources */,
 				80C4CF801BEC394B00044D0E /* AppDelegate.swift in Sources */,
+				54843B7A1BEC510C00059A65 /* User.swift in Sources */,
+				54843B751BEC510C00059A65 /* Category.swift in Sources */,
 				549606D11BEC475600348AFE /* Story.swift in Sources */,
 				549606D31BEC475600348AFE /* User.swift in Sources */,
+				54843B791BEC510C00059A65 /* Support.swift in Sources */,
 				549606D21BEC475600348AFE /* Support.swift in Sources */,
+				54843B771BEC510C00059A65 /* Needs.swift in Sources */,
+				54843B781BEC510C00059A65 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
