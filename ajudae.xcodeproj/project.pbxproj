@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F481A63E1E8911F2B322635 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD94E1AAD05D4496AF6B2FC /* Pods.framework */; };
+		804293C51BEC40BA008A1C20 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804293C31BEC40BA008A1C20 /* Feed.storyboard */; };
 		80C4CF801BEC394B00044D0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4CF7F1BEC394B00044D0E /* AppDelegate.swift */; };
 		80C4CF821BEC394B00044D0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4CF811BEC394B00044D0E /* ViewController.swift */; };
 		80C4CF851BEC394B00044D0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C4CF831BEC394B00044D0E /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		804293C41BEC40BA008A1C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Feed.storyboard; sourceTree = "<group>"; };
 		80C4CF7C1BEC394B00044D0E /* ajudae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ajudae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C4CF7F1BEC394B00044D0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C4CF811BEC394B00044D0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		804293C61BEC40FA008A1C20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				80C4CF811BEC394B00044D0E /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		804293C71BEC4102008A1C20 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				80C4CF861BEC394B00044D0E /* Assets.xcassets */,
+				80C4CF7F1BEC394B00044D0E /* AppDelegate.swift */,
+				80C4CF8B1BEC394B00044D0E /* Info.plist */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		804293C81BEC4119008A1C20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80C4CF881BEC394B00044D0E /* LaunchScreen.storyboard */,
+				804293C31BEC40BA008A1C20 /* Feed.storyboard */,
+				80C4CF831BEC394B00044D0E /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		80C4CF731BEC394B00044D0E = {
 			isa = PBXGroup;
 			children = (
@@ -113,12 +143,9 @@
 		80C4CF7E1BEC394B00044D0E /* ajudae */ = {
 			isa = PBXGroup;
 			children = (
-				80C4CF7F1BEC394B00044D0E /* AppDelegate.swift */,
-				80C4CF811BEC394B00044D0E /* ViewController.swift */,
-				80C4CF831BEC394B00044D0E /* Main.storyboard */,
-				80C4CF861BEC394B00044D0E /* Assets.xcassets */,
-				80C4CF881BEC394B00044D0E /* LaunchScreen.storyboard */,
-				80C4CF8B1BEC394B00044D0E /* Info.plist */,
+				804293C71BEC4102008A1C20 /* Application */,
+				804293C61BEC40FA008A1C20 /* Controller */,
+				804293C81BEC4119008A1C20 /* View */,
 			);
 			path = ajudae;
 			sourceTree = "<group>";
@@ -258,6 +285,7 @@
 			files = (
 				80C4CF8A1BEC394B00044D0E /* LaunchScreen.storyboard in Resources */,
 				80C4CF871BEC394B00044D0E /* Assets.xcassets in Resources */,
+				804293C51BEC40BA008A1C20 /* Feed.storyboard in Resources */,
 				80C4CF851BEC394B00044D0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +396,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		804293C31BEC40BA008A1C20 /* Feed.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				804293C41BEC40BA008A1C20 /* Base */,
+			);
+			name = Feed.storyboard;
+			sourceTree = "<group>";
+		};
 		80C4CF831BEC394B00044D0E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
