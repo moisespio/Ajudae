@@ -35,6 +35,8 @@
 		80C4CF8A1BEC394B00044D0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C4CF881BEC394B00044D0E /* LaunchScreen.storyboard */; };
 		80C4CF951BEC394B00044D0E /* ajudaeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4CF941BEC394B00044D0E /* ajudaeTests.swift */; };
 		80C4CFA01BEC394B00044D0E /* ajudaeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4CF9F1BEC394B00044D0E /* ajudaeUITests.swift */; };
+		80FFE6581BEC5B96006093FF /* DonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFE6571BEC5B96006093FF /* DonationsViewController.swift */; };
+		80FFE65A1BEC5BDD006093FF /* DonationsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFE6591BEC5BDD006093FF /* DonationsCollectionViewCell.swift */; };
 		BF37BF4E1BEC533600FB1BD5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF37BF4D1BEC533600FB1BD5 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +91,8 @@
 		80C4CF9B1BEC394B00044D0E /* ajudaeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ajudaeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C4CF9F1BEC394B00044D0E /* ajudaeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ajudaeUITests.swift; sourceTree = "<group>"; };
 		80C4CFA11BEC394B00044D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80FFE6571BEC5B96006093FF /* DonationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationsViewController.swift; sourceTree = "<group>"; };
+		80FFE6591BEC5BDD006093FF /* DonationsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationsCollectionViewCell.swift; sourceTree = "<group>"; };
 		ABC80517ABF06EC52D6FBA8B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BF37BF4D1BEC533600FB1BD5 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		E139CCCC4156BFAEC8B12A42 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -165,8 +169,10 @@
 			isa = PBXGroup;
 			children = (
 				80C4CF811BEC394B00044D0E /* MainViewController.swift */,
-				800409711BEC440700A6D67C /* FeedViewController.swift */,
 				80631D731BEC4E7F0061A671 /* MainTableViewCell.swift */,
+				800409711BEC440700A6D67C /* FeedViewController.swift */,
+				80FFE6571BEC5B96006093FF /* DonationsViewController.swift */,
+				80FFE6591BEC5BDD006093FF /* DonationsCollectionViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -454,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54843B741BEC510C00059A65 /* ApplyDonation.swift in Sources */,
+				80FFE6581BEC5B96006093FF /* DonationsViewController.swift in Sources */,
 				80C4CF821BEC394B00044D0E /* MainViewController.swift in Sources */,
 				800409721BEC440700A6D67C /* FeedViewController.swift in Sources */,
 				54843B761BEC510C00059A65 /* Donation.swift in Sources */,
@@ -464,6 +471,7 @@
 				54843B751BEC510C00059A65 /* Category.swift in Sources */,
 				54843B791BEC510C00059A65 /* Support.swift in Sources */,
 				54843B771BEC510C00059A65 /* Needs.swift in Sources */,
+				80FFE65A1BEC5BDD006093FF /* DonationsCollectionViewCell.swift in Sources */,
 				54843B781BEC510C00059A65 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
