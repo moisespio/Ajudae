@@ -70,7 +70,6 @@ class Util {
     }
 
     static func setAppUi() {
-        let colorNav = UIColor(red: 137/255.0, green:88/255.0, blue:166/255.0, alpha:1.0)
         let font = UIFont(name: "HelveticaNeue-Bold", size: 16)
 
         if let font = font {

@@ -500,8 +500,8 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5R-Qv-S1Y">
-                                        <rect key="frame" x="12" y="447" width="576" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5R-Qv-S1Y">
+                                        <rect key="frame" x="12" y="428" width="576" height="50"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.51764705882352935" green="0.8666666666666667" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -548,7 +548,7 @@
                                     <constraint firstItem="fOe-kC-WR9" firstAttribute="leading" secondItem="ZZG-Og-OyN" secondAttribute="leading" constant="12" id="Hck-bU-Qbb"/>
                                     <constraint firstAttribute="bottom" secondItem="6mD-eo-pkg" secondAttribute="bottom" constant="464" id="NoH-2X-S0u"/>
                                     <constraint firstAttribute="trailing" secondItem="fOe-kC-WR9" secondAttribute="trailing" constant="12" id="ZTk-xM-SHX"/>
-                                    <constraint firstItem="I5R-Qv-S1Y" firstAttribute="top" secondItem="LXe-O2-wyI" secondAttribute="bottom" constant="31" id="a1F-lN-CWp"/>
+                                    <constraint firstItem="I5R-Qv-S1Y" firstAttribute="top" secondItem="LXe-O2-wyI" secondAttribute="bottom" constant="12" id="a1F-lN-CWp"/>
                                     <constraint firstItem="fOe-kC-WR9" firstAttribute="top" secondItem="WxX-Rc-sM5" secondAttribute="bottom" constant="8" id="hES-Vc-5GI"/>
                                     <constraint firstItem="6mD-eo-pkg" firstAttribute="leading" secondItem="ZZG-Og-OyN" secondAttribute="leading" constant="12" id="idO-oc-0sJ"/>
                                     <constraint firstItem="6mD-eo-pkg" firstAttribute="centerX" secondItem="ZZG-Og-OyN" secondAttribute="centerX" id="scl-b7-WYg"/>
@@ -682,7 +682,7 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kX4-TC-kNo">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kX4-TC-kNo">
                                         <rect key="frame" x="12" y="599" width="576" height="50"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.51764705879999995" green="0.86666666670000003" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
