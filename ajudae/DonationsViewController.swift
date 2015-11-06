@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DonationsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
@@ -61,6 +62,12 @@ class DonationsViewController: UIViewController, UICollectionViewDataSource, UIC
         let donation = donations[indexPath.row]
 
         cell.labelTitle.text = donation.title
+
+        if let photo = donation.image,
+            _url = photo.url {
+                let url = NSURL(string: _url)
+                cell.imageDonation.kf_setImageWithURL(url!, placeholderImage: UIImage(named: "placeholder"))
+        }
 
         return cell
     }

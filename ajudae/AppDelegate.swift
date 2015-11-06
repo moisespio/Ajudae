@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
         Util.registerClass()
+        Util.setAppUi()
         
         return true
     }
