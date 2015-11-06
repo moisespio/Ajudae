@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0F481A63E1E8911F2B322635 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD94E1AAD05D4496AF6B2FC /* Pods.framework */; };
+		549606CD1BEC475600348AFE /* ApplyDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549606C61BEC475600348AFE /* ApplyDonation.swift */; };
+		549606CE1BEC475600348AFE /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549606C71BEC475600348AFE /* Category.swift */; };
+		549606CF1BEC475600348AFE /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549606C81BEC475600348AFE /* Donation.swift */; };
+		549606D01BEC475600348AFE /* Needs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549606C91BEC475600348AFE /* Needs.swift */; };
+		549606D11BEC475600348AFE /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549606CA1BEC475600348AFE /* Story.swift */; };
+		549606D21BEC475600348AFE /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549606CB1BEC475600348AFE /* Support.swift */; };
+		549606D31BEC475600348AFE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549606CC1BEC475600348AFE /* User.swift */; };
 		800409721BEC440700A6D67C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800409711BEC440700A6D67C /* FeedViewController.swift */; };
 		804293C51BEC40BA008A1C20 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804293C31BEC40BA008A1C20 /* Feed.storyboard */; };
 		80C4CF801BEC394B00044D0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4CF7F1BEC394B00044D0E /* AppDelegate.swift */; };
@@ -37,6 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		549606C61BEC475600348AFE /* ApplyDonation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyDonation.swift; sourceTree = "<group>"; };
+		549606C71BEC475600348AFE /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		549606C81BEC475600348AFE /* Donation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
+		549606C91BEC475600348AFE /* Needs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Needs.swift; sourceTree = "<group>"; };
+		549606CA1BEC475600348AFE /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		549606CB1BEC475600348AFE /* Support.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
+		549606CC1BEC475600348AFE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		800409711BEC440700A6D67C /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = Controller/FeedViewController.swift; sourceTree = "<group>"; };
 		804293C41BEC40BA008A1C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Feed.storyboard; sourceTree = "<group>"; };
 		80C4CF7C1BEC394B00044D0E /* ajudae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ajudae.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +104,20 @@
 				ABC80517ABF06EC52D6FBA8B /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		549606C51BEC474000348AFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				549606C61BEC475600348AFE /* ApplyDonation.swift */,
+				549606C71BEC475600348AFE /* Category.swift */,
+				549606C81BEC475600348AFE /* Donation.swift */,
+				549606C91BEC475600348AFE /* Needs.swift */,
+				549606CA1BEC475600348AFE /* Story.swift */,
+				549606CB1BEC475600348AFE /* Support.swift */,
+				549606CC1BEC475600348AFE /* User.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		804293C61BEC40FA008A1C20 /* Controller */ = {
@@ -146,6 +174,7 @@
 		80C4CF7E1BEC394B00044D0E /* ajudae */ = {
 			isa = PBXGroup;
 			children = (
+				549606C51BEC474000348AFE /* Model */,
 				804293C71BEC4102008A1C20 /* Application */,
 				804293C61BEC40FA008A1C20 /* Controller */,
 				804293C81BEC4119008A1C20 /* View */,
@@ -362,9 +391,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				549606D01BEC475600348AFE /* Needs.swift in Sources */,
+				549606CD1BEC475600348AFE /* ApplyDonation.swift in Sources */,
+				549606CE1BEC475600348AFE /* Category.swift in Sources */,
 				80C4CF821BEC394B00044D0E /* ViewController.swift in Sources */,
+				549606CF1BEC475600348AFE /* Donation.swift in Sources */,
 				800409721BEC440700A6D67C /* FeedViewController.swift in Sources */,
 				80C4CF801BEC394B00044D0E /* AppDelegate.swift in Sources */,
+				549606D11BEC475600348AFE /* Story.swift in Sources */,
+				549606D31BEC475600348AFE /* User.swift in Sources */,
+				549606D21BEC475600348AFE /* Support.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
