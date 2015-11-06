@@ -40,6 +40,8 @@ class Donation: PFObject, PFSubclassing {
 
         query.orderByDescending("createdAt")
         query.limit = 1000
+        
+        query.includeKey("user")
 
         query.findObjectsInBackgroundWithBlock {
             (objects, error) -> Void in

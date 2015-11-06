@@ -32,7 +32,7 @@ class StoriesViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         nav?.barTintColor = UIColor.laranja
         nav?.tintColor = UIColor.whiteColor()
-        nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.laranja]
+        nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
     }
     
     func loadStories() {

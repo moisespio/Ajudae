@@ -40,6 +40,16 @@ class DonationDetailsViewController: UIViewController {
         guard let _donation = self.donation else {
             return
         }
+        
+        labelUserName.text = _donation.user!.name
+        if let photo = _donation.user!.image,
+            _url = photo.url {
+                let url = NSURL(string: _url)
+                imageProfile.kf_setImageWithURL(url!, placeholderImage: UIImage(named: "placeholder"))
+        }
+        
+        labelCity.text = _donation.user!.city
+
         if let photo = _donation.image,
             _url = photo.url {
                 let url = NSURL(string: _url)

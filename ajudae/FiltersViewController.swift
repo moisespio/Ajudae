@@ -64,7 +64,7 @@ class FiltersViewController: UIViewController, UITableViewDataSource, UITableVie
         
         return cell
     }
-    
+
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }

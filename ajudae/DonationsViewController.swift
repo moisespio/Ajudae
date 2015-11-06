@@ -41,7 +41,7 @@ class DonationsViewController: UIViewController, UICollectionViewDataSource, UIC
         
         nav?.barTintColor = UIColor.rosa
         nav?.tintColor = UIColor.whiteColor()
-        nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.laranja]
+        nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
     }
 
     func updateTableView() {
