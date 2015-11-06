@@ -29,7 +29,18 @@ class ApplyViewController: UIViewController {
         self.imageProfile.layer.cornerRadius = self.imageProfile.frame.width/2
         self.imageProfile.clipsToBounds = true
         
+        let tap = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        self.view.addGestureRecognizer(tap)
+        
         self.loadInfo()
+    }
+    
+    func dismissKeyboard() {
+        self.textViewMessage.resignFirstResponder()
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,4 +57,23 @@ class ApplyViewController: UIViewController {
         self.labelItemDescription.text = _donation.about
     }
 
+    @IBAction func applyForDonation(sender: AnyObject) {
+        
+        guard let _donation = self.donation else {
+            return
+        }
+        
+        let newApplyDonation = ApplyDonation()
+        newApplyDonation.donation = _donation
+        newApplyDonation.reason = self.textViewMessage.text
+        if let user = User.currentUser() {
+            newApplyDonation.user = user
+        }
+        
+        newApplyDonation.saveInBackgroundWithBlock { (succeeded, error) -> Void in
+            if succeeded {
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }
+        }
+    }
 }
