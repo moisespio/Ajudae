@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F481A63E1E8911F2B322635 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD94E1AAD05D4496AF6B2FC /* Pods.framework */; };
 		80C4CF801BEC394B00044D0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4CF7F1BEC394B00044D0E /* AppDelegate.swift */; };
 		80C4CF821BEC394B00044D0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4CF811BEC394B00044D0E /* ViewController.swift */; };
 		80C4CF851BEC394B00044D0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C4CF831BEC394B00044D0E /* Main.storyboard */; };
@@ -47,6 +48,9 @@
 		80C4CF9B1BEC394B00044D0E /* ajudaeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ajudaeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C4CF9F1BEC394B00044D0E /* ajudaeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ajudaeUITests.swift; sourceTree = "<group>"; };
 		80C4CFA11BEC394B00044D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC80517ABF06EC52D6FBA8B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E139CCCC4156BFAEC8B12A42 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FCD94E1AAD05D4496AF6B2FC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F481A63E1E8911F2B322635 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ABFF08993C8429EC305434E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E139CCCC4156BFAEC8B12A42 /* Pods.debug.xcconfig */,
+				ABC80517ABF06EC52D6FBA8B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		80C4CF731BEC394B00044D0E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,8 @@
 				80C4CF931BEC394B00044D0E /* ajudaeTests */,
 				80C4CF9E1BEC394B00044D0E /* ajudaeUITests */,
 				80C4CF7D1BEC394B00044D0E /* Products */,
+				0ABFF08993C8429EC305434E /* Pods */,
+				CA47C9569607135766E63889 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +141,14 @@
 			path = ajudaeUITests;
 			sourceTree = "<group>";
 		};
+		CA47C9569607135766E63889 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCD94E1AAD05D4496AF6B2FC /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80C4CFA41BEC394B00044D0E /* Build configuration list for PBXNativeTarget "ajudae" */;
 			buildPhases = (
+				EFAD9544F58431D5E298629B /* Check Pods Manifest.lock */,
 				80C4CF781BEC394B00044D0E /* Sources */,
 				80C4CF791BEC394B00044D0E /* Frameworks */,
 				80C4CF7A1BEC394B00044D0E /* Resources */,
+				4C1CEE9158F838372AE7CFDB /* Embed Pods Frameworks */,
+				278DE1147855F60AEA8AB8F4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		278DE1147855F60AEA8AB8F4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C1CEE9158F838372AE7CFDB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFAD9544F58431D5E298629B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		80C4CF781BEC394B00044D0E /* Sources */ = {
@@ -397,6 +472,7 @@
 		};
 		80C4CFA51BEC394B00044D0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E139CCCC4156BFAEC8B12A42 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ajudae/Info.plist;
@@ -408,6 +484,7 @@
 		};
 		80C4CFA61BEC394B00044D0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABC80517ABF06EC52D6FBA8B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ajudae/Info.plist;
@@ -484,6 +561,7 @@
 				80C4CFA61BEC394B00044D0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80C4CFA71BEC394B00044D0E /* Build configuration list for PBXNativeTarget "ajudaeTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +570,7 @@
 				80C4CFA91BEC394B00044D0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80C4CFAA1BEC394B00044D0E /* Build configuration list for PBXNativeTarget "ajudaeUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +579,7 @@
 				80C4CFAC1BEC394B00044D0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
