@@ -52,7 +52,7 @@ class ApplyViewController: UIViewController {
             return
         }
         
-//        self.labelUserName.text = user.name
+        self.navigationItem.title = _donation.title
         self.labelItemTitle.text = _donation.title
         self.labelItemDescription.text = _donation.about
     }
