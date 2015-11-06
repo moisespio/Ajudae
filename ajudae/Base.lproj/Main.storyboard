@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2B1-nh-OhA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QWK-mx-C1o">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -148,7 +148,7 @@
             </objects>
             <point key="canvasLocation" x="863" y="-355"/>
         </scene>
-        <!--Donations View Controller-->
+        <!--Doações-->
         <scene sceneID="5Z0-6X-bS0">
             <objects>
                 <viewController id="TFr-Ue-bT4" customClass="DonationsViewController" customModule="ajudae" customModuleProvider="target" sceneMemberID="viewController">
@@ -230,6 +230,13 @@
                             <constraint firstItem="QKg-Ua-zZv" firstAttribute="leading" secondItem="gIJ-vg-Zvu" secondAttribute="leading" id="LlS-J1-12a"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Doações" id="Wpc-Or-jLb">
+                        <barButtonItem key="rightBarButtonItem" title="FILTRO" id="XiV-cL-xG1">
+                            <connections>
+                                <segue destination="2B1-nh-OhA" kind="showDetail" id="Wh4-Kj-Vgt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="QKg-Ua-zZv" id="aY2-Ed-8Su"/>
                         <segue destination="KGe-rV-EZW" kind="show" identifier="segueApplyForDonation" id="zSf-OE-d84"/>
@@ -502,7 +509,6 @@
                         <outlet property="labelItemDescription" destination="fOe-kC-WR9" id="EyV-jP-1uf"/>
                         <outlet property="labelItemTitle" destination="WxX-Rc-sM5" id="ldE-b1-v1l"/>
                         <outlet property="labelUserName" destination="HO7-nf-CJY" id="B8w-lD-7xm"/>
-                        <segue destination="adS-dh-KSI" kind="show" identifier="segueDetailsToApplyDonation" id="CgC-0O-c9s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eez-Fy-p6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -746,7 +752,7 @@
             </objects>
             <point key="canvasLocation" x="1559" y="1109"/>
         </scene>
-        <!--Filters View Controller-->
+        <!--Filtrar-->
         <scene sceneID="36h-Us-ZwL">
             <objects>
                 <viewController id="2B1-nh-OhA" customClass="FiltersViewController" customModule="ajudae" customModuleProvider="target" sceneMemberID="viewController">
@@ -764,7 +770,7 @@
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="120" id="XRS-Au-Yxc" customClass="FiltersTableViewCell" customModule="ajudae" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="120"/>
+                                        <rect key="frame" x="0.0" y="92" width="600" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XRS-Au-Yxc" id="zqr-Uu-5BI">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
@@ -851,13 +857,21 @@
                             <constraint firstAttribute="trailing" secondItem="487-Cc-6Hm" secondAttribute="trailing" id="znb-Ws-SNf"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Filtrar" id="PXj-kA-hUN">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="G23-t3-hlP">
+                            <connections>
+                                <action selector="cancel:" destination="2B1-nh-OhA" id="0At-ij-8Gn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tableView" destination="487-Cc-6Hm" id="EvS-JX-xwU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gbl-Ja-YG8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="863" y="1075"/>
+            <point key="canvasLocation" x="1566" y="-1041"/>
         </scene>
     </scenes>
     <resources>

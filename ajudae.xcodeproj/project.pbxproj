@@ -208,6 +208,7 @@
 				80FFE65D1BEC622E006093FF /* StoriesTableViewCell.swift */,
 				80FFE65F1BEC7394006093FF /* ApplyViewController.swift */,
 				80FFE6611BEC7C1F006093FF /* StoryViewController.swift */,
+				54FE19B21BEC8CEC0049BCFA /* DonationDetailsViewController.swift */,
 				80FFE6631BEC8C06006093FF /* FiltersViewController.swift */,
 				80FFE6651BEC8CC7006093FF /* FiltersTableViewCell.swift */,
 			);
